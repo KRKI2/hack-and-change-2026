@@ -1,0 +1,8 @@
+.env
+.git
+__pycache__/
+*.pyc
+dist/
+data/*.csv
+submission.csv
+eval_report.*

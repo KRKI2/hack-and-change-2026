@@ -1,0 +1,11 @@
+services:
+  assistant:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "${PORT:-8000}:8000"
+    volumes:
+      - ./cache:/app/cache
+    restart: unless-stopped
