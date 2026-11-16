@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "legal-assistant",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["server:app", "--port", "8000", "--reload"],
+      "cwd": "${workspaceFolder}/legal-assistant",
+      "envFile": "${workspaceFolder}/legal-assistant/.env",
+      "justMyCode": true
+    }
+  ]
+}
